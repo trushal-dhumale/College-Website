@@ -1,0 +1,59 @@
+/* Container */
+.interview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* space-y-4 */
+}
+
+/* Title */
+.interview-title {
+  font-size: 20px; /* text-xl */
+  font-weight: 600; /* font-semibold */
+}
+
+/* Grid layout */
+.interview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* md:grid-cols-3 */
+  gap: 16px; /* gap-4 */
+}
+
+/* Card */
+.interview-card {
+  background: #fff;
+  border: 1px solid #e5e7eb; /* border */
+  border-radius: 12px; /* rounded-xl */
+  padding: 16px; /* p-4 */
+}
+
+/* Company & Role */
+.card-company-role {
+  font-weight: 500; /* font-medium */
+}
+
+/* Room and Time */
+.card-detail {
+  font-size: 14px; /* text-sm */
+  color: #6b7280; /* text-gray-500 */
+  margin-top: 4px;
+}
+
+/* Status badge */
+.status-badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 8px;
+  font-size: 12px; /* text-xs */
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.status-badge.running {
+  background-color: #dcfce7; /* green-100 */
+  color: #15803d; /* green-700 */
+}
+
+.status-badge.upcoming {
+  background-color: #fef9c3; /* yellow-100 */
+  color: #a16207; /* yellow-700 */
+}

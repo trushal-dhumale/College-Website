@@ -1,0 +1,71 @@
+/* Container */
+.settings-container {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Title */
+.settings-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Card */
+.settings-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Labels & Inputs */
+.settings-label {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.settings-input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Checkbox */
+.settings-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-input {
+  height: 16px;
+  width: 16px;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Button */
+.settings-button {
+  padding: 8px 16px;
+  background-color: #2563eb; /* Brand Blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.settings-button:hover {
+  background-color: #1d4ed8;
+}

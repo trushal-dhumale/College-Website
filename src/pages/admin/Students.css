@@ -1,0 +1,50 @@
+/* Container */
+.students-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Header */
+.students-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Title */
+.students-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Button group */
+.students-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Common Button Style */
+.btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Outline Button */
+.btn-outline {
+  border: 1px solid #d1d5db;
+  background-color: white;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: #2563eb; /* Brand Blue */
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}

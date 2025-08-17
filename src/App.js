@@ -1,38 +1,44 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import React from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Layout from "./layout/Layout.jsx";
 
-import Home from './pages/Home'
-import About from './pages/About'
-import Courses from './pages/Courses'
-import Faculty from './pages/Faculty'
-import Events from './pages/Events'
-import Contact from './pages/Contact'
-import Login from './pages/Login'
-import Signup from './pages/Signup'
-import StudentDashboard from './pages/StudentDashboard'
-import AdminDashboard from './pages/AdminDashboard'
+// Public site (tumhara existing Home/About… yahin rahenge)
+import PublicHome from "./pages/public/Home.jsx";
 
-export default function App(){
+// Admin pages (mockups ke hisab se)
+import InstituteHome from "./pages/admin/InstituteHome.jsx";
+import Analytics from "./pages/admin/Analytics.jsx";
+import Applications from "./pages/admin/Applications.jsx";
+import Students from "./pages/admin/Students.jsx";
+import ExportStudents from "./pages/admin/ExportStudents.jsx";
+import InterviewMonitor from "./pages/admin/InterviewMonitor.jsx";
+import Jobs from "./pages/admin/Jobs.jsx";
+import PostJob from "./pages/admin/PostJob.jsx";
+import Reports from "./pages/admin/Reports.jsx";
+import Settings from "./pages/admin/Settings.jsx";
+
+export default function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <main className="flex-grow container mx-auto px-4 py-8">
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/courses" element={<Courses/>} />
-          <Route path="/faculty" element={<Faculty/>} />
-          <Route path="/events" element={<Events/>} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/signup" element={<Signup/>} />
-          <Route path="/student" element={<StudentDashboard/>} />
-          <Route path="/admin" element={<AdminDashboard/>} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
-  )
+    <Routes>
+      {/* Public routes */}
+      <Route path="/" element={<PublicHome />} />
+
+      {/* Admin layout */}
+      <Route element={<Layout />}>
+        <Route path="/institute" element={<InstituteHome />} />
+        <Route path="/institute/analytics" element={<Analytics />} />
+        <Route path="/institute/applications" element={<Applications />} />
+        <Route path="/institute/students" element={<Students />} />
+        <Route path="/institute/students/export" element={<ExportStudents />} />
+        <Route path="/institute/interviews" element={<InterviewMonitor />} />
+        <Route path="/institute/jobs" element={<Jobs />} />
+        <Route path="/institute/post-job" element={<PostJob />} />
+        <Route path="/institute/reports" element={<Reports />} />
+        <Route path="/institute/settings" element={<Settings />} />
+      </Route>
+
+      {/* Fallback */}
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+  );
 }

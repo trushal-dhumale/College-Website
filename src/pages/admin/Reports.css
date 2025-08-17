@@ -1,0 +1,31 @@
+/* Container */
+.reports-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Title */
+.reports-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Grid Layout */
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+/* Report Cards */
+.report-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  height: 224px; /* matches h-56 */
+  display: grid;
+  place-items: center;
+  color: #6b7280;
+  font-size: 14px;
+}

@@ -1,0 +1,53 @@
+/* Main container */
+.export-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* space-y-4 */
+}
+
+/* Title */
+.export-title {
+  font-size: 20px; /* text-xl */
+  font-weight: 600; /* font-semibold */
+}
+
+/* Box container */
+.export-box {
+  background-color: #ffffff; /* bg-white */
+  border: 1px solid #e5e7eb; /* border */
+  border-radius: 12px; /* rounded-xl */
+  padding: 16px; /* p-4 */
+}
+
+/* Grid layout for filters */
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* md:grid-cols-3 */
+  gap: 16px; /* gap-4 */
+}
+
+/* Dropdown styling */
+.dropdown {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 12px; /* px-3 py-2 */
+  font-size: 14px;
+  outline: none;
+}
+
+/* Button */
+.export-btn {
+  margin-top: 16px; /* mt-4 */
+  padding: 8px 16px; /* px-4 py-2 */
+  background-color: #2563eb; /* bg-brand-600 */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.export-btn:hover {
+  background-color: #1e4fc9; /* darker shade on hover */
+}
+

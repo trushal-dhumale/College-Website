@@ -1,0 +1,91 @@
+/* Container */
+.jobs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* space-y-4 */
+}
+
+/* Header */
+.jobs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Title */
+.jobs-title {
+  font-size: 20px; /* text-xl */
+  font-weight: 600; /* font-semibold */
+}
+
+/* Post Button */
+.post-btn {
+  padding: 8px 16px;
+  background-color: #2563eb; /* brand color example */
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.post-btn:hover {
+  background-color: #1e40af; /* darker shade */
+}
+
+/* Grid */
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* responsive like md:grid-cols-3 */
+  gap: 16px; /* gap-4 */
+}
+
+/* Job Card */
+.job-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* Company */
+.job-company {
+  font-weight: 500;
+}
+
+/* Job Title */
+.job-title {
+  font-size: 14px;
+  color: #4b5563; /* gray-600 */
+}
+
+/* Applicants */
+.job-applicants {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Status Badge */
+.status-badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.status-badge.open {
+  background-color: #dcfce7; /* green-100 */
+  color: #15803d; /* green-700 */
+}
+
+.status-badge.screening {
+  background-color: #fef9c3; /* yellow-100 */
+  color: #a16207; /* yellow-700 */
+}
+
+.status-badge.closed {
+  background-color: #f3f4f6; /* gray-100 */
+  color: #374151; /* gray-700 */
+}

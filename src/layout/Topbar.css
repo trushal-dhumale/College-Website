@@ -1,0 +1,89 @@
+/* Topbar Container */
+.topbar {
+  height: 64px; /* h-16 */
+  background-color: #ffffff; /* bg-white */
+  border-bottom: 1px solid #e5e7eb; /* border-b */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px; /* px-4 */
+}
+
+/* Search Section */
+.topbar-search {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* gap-2 */
+  width: 100%;
+  max-width: 32rem; /* max-w-lg */
+}
+
+.icon-gray {
+  color: #6b7280; /* text-gray-500 */
+}
+
+.search-input {
+  width: 100%;
+  outline: none;
+  font-size: 14px; /* text-sm */
+  border: none;
+}
+
+/* Actions Section */
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* gap-4 */
+}
+
+/* Notification Button */
+.notification-btn {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-dark {
+  color: #4b5563; /* text-gray-600 */
+}
+
+.notification-badge {
+  position: absolute;
+  top: -4px; /* -top-1 */
+  right: -4px; /* -right-1 */
+  height: 16px; /* h-4 */
+  width: 16px; /* w-4 */
+  border-radius: 9999px; /* rounded-full */
+  background-color: #6366f1; /* bg-brand-500 (custom brand color) */
+  color: #fff;
+  font-size: 10px; /* text-[10px] */
+  display: grid;
+  place-items: center;
+}
+
+/* User Info */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* gap-2 */
+}
+
+.user-avatar {
+  height: 32px; /* h-8 */
+  width: 32px; /* w-8 */
+  border-radius: 9999px; /* rounded-full */
+}
+
+.user-details {
+  font-size: 14px; /* text-sm */
+}
+
+.user-name {
+  font-weight: 500; /* font-medium */
+}
+
+.user-role {
+  color: #6b7280; /* text-gray-500 */
+  font-size: 12px; /* text-xs */
+}

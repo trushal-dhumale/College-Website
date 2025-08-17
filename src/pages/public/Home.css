@@ -1,0 +1,36 @@
+/* Main container */
+.home-container {
+  padding: 32px; /* p-8 */
+  max-width: 960px; /* max-w-5xl */
+  margin: 0 auto; /* mx-auto */
+}
+
+/* Title */
+.home-title {
+  font-size: 30px; /* text-3xl */
+  font-weight: bold; /* font-bold */
+}
+
+/* Subtitle */
+.home-subtitle {
+  margin-top: 8px; /* mt-2 */
+  color: #4b5563; /* text-gray-600 */
+  font-size: 16px;
+}
+
+/* Button */
+.home-button {
+  display: inline-block;
+  margin-top: 24px; /* mt-6 */
+  padding: 8px 16px; /* px-4 py-2 */
+  background-color: #4f46e5; /* bg-brand-600 (custom brand color) */
+  color: #ffffff; /* text-white */
+  border-radius: 8px; /* rounded-lg */
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #4338ca; /* darken for hover */
+}
