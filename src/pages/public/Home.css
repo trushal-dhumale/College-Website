@@ -1,36 +1,95 @@
-/* Main container */
 .home-container {
-  padding: 32px; /* p-8 */
-  max-width: 960px; /* max-w-5xl */
-  margin: 0 auto; /* mx-auto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: background-image 1s ease-in-out;
 }
 
-/* Title */
+/* Dark overlay for better readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+/* Content above overlay */
+.home-title, .home-subtitle, .home-button, .home-footer {
+  position: relative;
+  z-index: 1;
+}
+
 .home-title {
-  font-size: 30px; /* text-3xl */
-  font-weight: bold; /* font-bold */
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+  animation: fadeInDown 1s ease;
 }
 
-/* Subtitle */
 .home-subtitle {
-  margin-top: 8px; /* mt-2 */
-  color: #4b5563; /* text-gray-600 */
-  font-size: 16px;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  line-height: 1.5;
+  color: #f0f0f0;
+  animation: fadeInUp 1s ease;
 }
 
 /* Button */
 .home-button {
-  display: inline-block;
-  margin-top: 24px; /* mt-6 */
-  padding: 8px 16px; /* px-4 py-2 */
-  background-color: #4f46e5; /* bg-brand-600 (custom brand color) */
-  color: #ffffff; /* text-white */
-  border-radius: 8px; /* rounded-lg */
+  padding: 15px 40px;
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: #fff;
   text-decoration: none;
-  font-size: 16px;
-  transition: background 0.3s ease;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 .home-button:hover {
-  background-color: #4338ca; /* darken for hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+/* Footer */
+.home-footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+.home-footer a {
+  color: #ffb347;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.home-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Simple fade-in animations */
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }

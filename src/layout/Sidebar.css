@@ -29,8 +29,13 @@
 }
 
 .sidebar-title {
-  font-weight: 600; /* font-semibold */
+  font-weight: 600;
+  font-size: 18px; /* font-semibold */
 }
+
+
+
+
 
 /* Navigation */
 .sidebar-nav {

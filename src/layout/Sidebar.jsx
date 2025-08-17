@@ -17,7 +17,7 @@ export default function Sidebar() {
           src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
           alt="logo" className="sidebar-logo"
         />
-        <div className="sidebar-title">Institute Admin</div>
+        <div className="sidebar-title ">UpMind</div>
       </div>
       <nav className="sidebar-nav">
         <NavLink to="/institute" className={linkCls}><LayoutDashboard size={18}/> Home</NavLink>
