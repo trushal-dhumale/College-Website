@@ -1,0 +1,91 @@
+.courses-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.courses-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #ff6600;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.course-title {
+  font-size: 1.5rem;
+  color: #ff6600;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.course-duration {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.course-desc {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.apply-btn {
+  align-self: flex-start;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.apply-btn:hover {
+  background-color: #e65500;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .courses-heading {
+    font-size: 2rem;
+  }
+
+  .course-card {
+    padding: 20px 15px;
+  }
+
+  .course-title {
+    font-size: 1.3rem;
+  }
+}
